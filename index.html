@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Password Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+        <script src="js/main.js"></script>
+        <script src="js/libraries/FileSaver.js"></script>
+        <script src="js/libraries/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            
+            <div id="input">
+                <label for="numberofpw">Anzahl der Passwörter: </label>
+                <input type="number" name="numberofpw" id="numberofpw" min="0" max="50">
+                <label for="numberofpw">Max. 50</label>
+                <br> <br>
+                <label for="pwlength">Länge der Passwörter: </label>
+                <input type="number" name="pwlength" id="pwlength" min="0" max="100">
+                <label for="pwlength">Max. 100</label>
+            </div>
+
+            <div id="checkboxes-01">
+                <br>
+                <input type="checkbox" name="specialcharsetcheckbox" id="specialcharsetcheckbox" onclick="test();">
+                <label for="specialcharsetcheckbox">Eigenes Charset verwenden</label>
+                <input hidden type="text" name="specialcharset" id="specialcharset">
+            </div>
+
+            <div id="checkboxes-02">
+                <br>
+                <input type="checkbox" name="Upper Case" id="uppercase">
+                <label for="uppercase">Großbuchstaben</label>
+                <br>
+                <input type="checkbox" name="Numbers" id="numbers">
+                <label for="numbers">Zahlen: (123456789)</label>
+                <br>
+                <input type="checkbox" name="Special Characters" id="specialchars">
+                <label for="specialchars">Sonderzeichen: (!@#$%^&*()-+)</label>
+            </div>
+
+            <br>
+
+            <div id="button">
+                <button id="pwgen" onclick="exec();">Passwort generieren</button>
+                <button id="export" onclick="export_pw();">Passwörter exportieren</button>
+            </div>
+
+            <br>
+
+            <div id="description">
+                Generierte Passwörter:
+            </div>
+
+            <div id="output">
+            </div>
+
+        </div>
+    </body>
+</html>
