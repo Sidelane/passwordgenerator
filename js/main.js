@@ -92,7 +92,7 @@ function exec() {
     numpw = $("#numberofpw").val();
 
     if (length == "" || numpw == "") {
-        alert("Bitte alle Felder ausfüllen.");
+        alert("There are Empty Fields.");
         $("#output").html("");
     }
 
