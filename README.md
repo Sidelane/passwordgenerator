@@ -1,5 +1,7 @@
 # Password Generator
 
+**Demo:** [github.io](https://sidelane.github.io/passwordgenerator/)
+
 **Charsets:**
 - standard charset: _abcdefghijklmnopqrstuvwxyz_
 - uppercase charset: _ABCDEFGHIJKLMNOPQRSTUVWXYZ_
