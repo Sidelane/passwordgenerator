@@ -15,6 +15,3 @@
 - FileSaver
 
 ---
-
-**Made By:**
-[Sidelane](https://github.com/Sidelane)
